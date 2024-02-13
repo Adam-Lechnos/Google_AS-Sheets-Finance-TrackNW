@@ -11,6 +11,6 @@ Google Sheets automation for tracking net worth
 | populateHistoricRecord | Time-driven | Month timer - 15th | 11pm to midnight | weekly |
 | populateHistoricRecord | Time-driven | Month timer - 1st | 11pm to midnight | weekly |
 
-*\*Day if month if `Month timer` is selected*
+*\*Day of the month if `Month timer` is selected*
 
 <sup><sub>Spreadsheet Name: `Net Worth Tracking & Forecast Worksheet - Quarterly Log`</sup></sub>
