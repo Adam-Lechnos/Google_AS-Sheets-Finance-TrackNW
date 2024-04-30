@@ -3,11 +3,12 @@ function populateHistoricRecord() {
   var sheetHistoricData = SpreadsheetApp.getActive().getSheetByName('Historic Data')
   var sheetSummary = SpreadsheetApp.getActive().getSheetByName('Summary')
   var sheetProjections = SpreadsheetApp.getActive().getSheetByName('Projections')
+  var sheetCurrNetworth = SpreadsheetApp.getActive().getSheetByName('Current Net Worth')
   var sheetRecordWorkSheet = SpreadsheetApp.getActive().getSheetByName('Record - Worksheet')
 
   var dateRecord = Utilities.formatDate(new Date(), "GMT-5", "MM/dd/yyyy")
   var numNetworth = sheetProjections.getRange('C2').getValue();
-  var numNetworhExHV = sheetRecordWorkSheet.getRange('D8').getValue();
+  var numNetworhExHV = sheetCurrNetworth.getRange('H3').getValue();
   var numFIRE = sheetProjections.getRange('C8').getValue();
   var numFIREIncome = sheetSummary.getRange('D18').getValue();
   var numCurrComExp = sheetProjections.getRange('C25').getValue();
